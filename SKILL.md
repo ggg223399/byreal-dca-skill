@@ -49,6 +49,7 @@ Only these tokens get auto mode selection (SMA check), Smart Exit monitoring, an
 # Check installation
 which byreal-cli && byreal-cli --version
 python3 -c "import yfinance; print('yfinance ok')"
+which jq && which bc   # needed by withdraw_usdc.sh
 
 # Wallet (required for all write operations)
 byreal-cli wallet address
